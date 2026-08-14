@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
 <style>
 /* ═══════════════════════════════════════════════════════════════════
    Identidad: la misma del tablero — #18181b + dorado #f9ae00 + blanco.
@@ -22,7 +22,7 @@
   --oro:#f9ae00; --oro-osc:#b87a00; --oro-suave:rgba(249,174,0,.14);
   --crema:#f6f5f3; --gris:#a8a29e; --texto:#232326; --texto2:#57534e;
   --blanco:#fff; --fondo-claro:#faf9f7; --borde-claro:#e7e5e4;
-  --serif:'Playfair Display',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+  --serif:'Playfair Display',Georgia,serif; --sans:'Nunito Sans',system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -219,6 +219,45 @@ a{color:inherit}
   .hero-foto-wrap::before{inset:-10px 10px 10px -10px}
 }
 
+
+/* ══════════ REFERENCIA HIRAJAVED (ago-2026): arco, pastillas, ondulado ══════════ */
+/* Retrato en arco — la firma de la referencia, en nuestra paleta */
+.hero-foto{border-radius:999px 999px 22px 22px !important;border-bottom:1px solid var(--borde-osc) !important}
+.hero-foto-wrap::before{border-style:dashed !important;border-radius:999px 999px 26px 26px !important}
+.chip-plancha{transform:rotate(2deg);border-radius:12px}
+
+/* Antetitulo como chip pastilla */
+.hero-eye{display:inline-flex;align-items:center;gap:9px;background:rgba(249,174,0,.13);border:1px solid rgba(249,174,0,.35);border-radius:999px;padding:9px 18px;letter-spacing:2.2px;font-size:11px}
+.hero-eye::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--oro)}
+
+/* Nota de consulta como pastillas */
+.hero-pills{display:flex;gap:10px;flex-wrap:wrap;padding-bottom:56px}
+.hero-pill{border:1px solid #3c3c42;border-radius:999px;padding:8px 16px;font-size:12.5px;font-weight:700;color:var(--gris)}
+.hero-pill b{color:var(--crema)}
+@media(max-width:880px){.hero-pills{padding-bottom:38px}}
+
+/* Subrayado ondulado dorado bajo los titulos (SVG inline, no clipart) */
+.sec h2::after,.votar h2::after{content:'';display:block;height:9px;width:118px;margin-top:12px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='9' viewBox='0 0 120 9'><path d='M2 6 Q 12 1 22 6 T 42 6 T 62 6 T 82 6 T 102 6 T 122 6' fill='none' stroke='%23f9ae00' stroke-width='3' stroke-linecap='round'/></svg>") no-repeat left center/118px 9px}
+.votar h2::after{margin-left:auto;margin-right:auto}
+
+/* Botones y CTA en pastilla */
+.btn,.nav-cta,.plancha-grande{border-radius:999px}
+
+/* El recorrido — 4 hitos verificados, el "journey" sobrio */
+.ruta{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px;position:relative}
+.ruta::before{content:'';position:absolute;top:9px;left:6%;right:6%;border-top:2px dotted #d8d4cf;z-index:0}
+.paso-r{position:relative;z-index:1}
+.paso-r i{display:block;width:18px;height:18px;border-radius:50%;background:#fff;border:4px solid var(--oro);margin-bottom:12px}
+.paso-r time{font-size:11.5px;font-weight:800;letter-spacing:1px;color:var(--oro-osc);text-transform:uppercase}
+.paso-r h4{font-size:15px;letter-spacing:-.2px;margin:4px 0 4px;color:var(--texto)}
+.paso-r p{font-size:13px;color:var(--texto2);line-height:1.5}
+@media(max-width:880px){
+  .ruta{grid-template-columns:1fr;gap:20px;padding-left:8px}
+  .ruta::before{top:2%;bottom:2%;left:16px;right:auto;border-top:none;border-left:2px dotted #d8d4cf}
+  .paso-r{padding-left:34px}
+  .paso-r i{position:absolute;left:0;top:2px;margin:0}
+}
+
 </style>
 </head>
 <body>
@@ -253,7 +292,7 @@ a{color:inherit}
         <a class="btn btn-oro" href="#viene">Conoce la propuesta</a>
         <a class="btn btn-linea" href="https://tablero-plan-de-accion.vercel.app" target="_blank" rel="noopener">Verifica los resultados</a>
       </div>
-      <p class="hero-nota">Consulta electrónica · <b>17 de septiembre de 2026</b> · plataforma Participa UNAL</p>
+      <div class="hero-pills"><span class="hero-pill">Consulta electrónica</span><span class="hero-pill"><b>17 de septiembre de 2026</b></span><span class="hero-pill">Participa UNAL</span></div>
     </div>
     <div class="hero-foto-wrap">
     <div class="hero-foto">
@@ -333,6 +372,12 @@ a{color:inherit}
         <h3>Equidad que se vuelve presupuesto</h3>
         <p>Bajo su gestión, la equidad y la inclusión dejaron de ser una declaración: 2.364 personas participaron en la estrategia de equidad de género, y la Facultad llegó al territorio — de Casanare al Cauca.</p>
       </div>
+    </div>
+    <div class="ruta rev">
+      <div class="paso-r"><i></i><time>2022</time><h4>Crea Minas Contigo</h4><p>Siendo Vicedecana funda el programa de acompañamiento en cursos de fundamentación.</p></div>
+      <div class="paso-r"><i></i><time>2024</time><h4>Asume la Decanatura</h4><p>Con una convicción: una Facultad centrada en las personas.</p></div>
+      <div class="paso-r"><i></i><time>2024 – 2026</time><h4>Plan de Acción</h4><p>31 proyectos con responsable, meta y avance — publicados en un tablero abierto.</p></div>
+      <div class="paso-r"><i></i><time>2026</time><h4>Plancha #4</h4><p>Candidata a la Decanatura 2026–2028: lo mejor está por venir.</p></div>
     </div>
     <div class="sec-acciones rev">
       <!-- ENLACES PENDIENTES: hoja de vida y perfil oficial de la consulta -->
