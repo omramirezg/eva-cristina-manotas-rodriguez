@@ -1,558 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eva Cristina Manotas Rodríguez · Decanatura 2026–2028 · Plancha #4</title>
-<meta name="description" content="Primero, las personas. Candidata a la Decanatura de la Facultad de Minas 2026–2028. Resultados verificables, propuesta y cómo votar. Plancha #4 · 17 de septiembre · Participa UNAL.">
-<!-- Vista previa al compartir por WhatsApp/redes -->
-<meta property="og:title" content="Eva Manotas · Decanatura Facultad de Minas 2026–2028 · Plancha #4">
-<meta property="og:description" content="Primero, las personas. Resultados que puedes verificar y la propuesta para el próximo bienio. Consulta: 17 de septiembre · Participa UNAL.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
-<style>
-/* ═══════════════════════════════════════════════════════════════════
-   Identidad (ago-2026): paleta femenina tomada de la referencia —
-   azul acero #2f5d81 + arcilla #e0af9e + rosa empolvado #faf0ee.
-   Editorial y cálida: un solo acento, mucho aire, cero adornos gratuitos.
-   ═══════════════════════════════════════════════════════════════════ */
-:root{
-  /* Paleta femenina (ago-2026) — de la referencia: azul acero, arcilla,
-     rosa empolvado y arena. Los NOMBRES de las variables se conservan para
-     no tocar cientos de reglas: --negro ahora es azul y --oro es arcilla. */
-  --negro:#2f5d81; --negro2:#274f70; --borde-osc:#41719a;
-  --oro:#ecc0ae; --oro-osc:#a96d59; --oro-suave:rgba(236,192,174,.16);
-  --crema:#fbf6f2; --gris:#c3d2de; --texto:#3f4a54; --texto2:#5f6b76;
-  --blanco:#fff; --fondo-claro:#faf0ee; --borde-claro:#ecdfda;
-  --serif:'Playfair Display',Georgia,serif; --sans:'Nunito Sans',system-ui,sans-serif;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;overflow-x:clip}
-body{overflow-x:clip}
-body{font-family:var(--sans);color:var(--texto);background:linear-gradient(180deg,#fff 0%,#faf0ee 100%);line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffdf9">
+  <title>Eva Cristina Manotas Rodríguez · Decanatura 2026–2028</title>
+  <meta name="description" content="Eva Cristina Manotas Rodríguez, candidata a la Decanatura de la Facultad de Minas 2026–2028. Conoce su gestión, su propuesta y cómo participar en la consulta.">
+  <meta property="og:title" content="Eva Cristina Manotas Rodríguez · Decanatura 2026–2028">
+  <meta property="og:description" content="Primero, las personas. Resultados verificables y una propuesta para el próximo bienio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/eva-hero.webp">
 
-/* ── Barra de navegación ─────────────────────────────────────────── */
-.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(39,79,112,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--borde-osc)}
-.nav-in{max-width:1120px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.nav-marca{display:flex;align-items:center;gap:11px;color:var(--crema);font-weight:700;font-size:14.5px;letter-spacing:-.2px;text-decoration:none;white-space:nowrap}
-.nav-marca img{width:34px;height:34px}
-.nav-links{display:flex;gap:26px;font-size:13px;font-weight:600}
-.nav-links a{color:#cfdde9;text-decoration:none;transition:color .15s}
-.nav-links a:hover{color:var(--oro)}
-.nav-cta{background:var(--oro);color:#1a1a1a;font-weight:800;font-size:12.5px;padding:9px 16px;border-radius:8px;text-decoration:none;letter-spacing:.2px;white-space:nowrap}
-@media(max-width:880px){.nav-links{display:none}}
-
-/* ── Portada ─────────────────────────────────────────────────────── */
-.hero{background:var(--negro);color:var(--crema);padding:150px 24px 0;position:relative;overflow:hidden}
-.hero-in{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:end}
-.hero-eye{color:var(--oro);font-size:11.5px;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:22px}
-.hero h1{font-family:var(--serif);font-weight:800;font-size:clamp(44px,6.6vw,84px);line-height:1.02;letter-spacing:-1.5px;margin-bottom:26px}
-.hero h1 em{font-style:normal;color:var(--oro);font-weight:700}
-.hero-sub{color:var(--gris);font-size:17px;line-height:1.65;max-width:520px;margin-bottom:34px}
-.hero-sub b{color:var(--crema);font-weight:600}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
-.btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:14.5px;padding:15px 26px;border-radius:10px;text-decoration:none;transition:transform .15s,box-shadow .15s;border:1px solid transparent}
-.btn:hover{transform:translateY(-2px)}
-.btn-oro{background:var(--oro);color:#1a1a1a;box-shadow:0 3px 9px rgba(0,0,0,.32)}
-.btn-linea{border-color:rgba(255,255,255,.4);color:var(--crema)}
-.btn-linea:hover{border-color:var(--oro);color:var(--oro)}
-.hero-nota{color:#9fb4c4;font-size:12.5px;padding-bottom:56px}
-.hero-nota b{color:var(--crema)}
-/* Retrato: cuando llegue la foto real, reemplazar el placeholder por
-   <img src="foto-eva.jpg" alt="Eva Cristina Manotas Rodríguez">        */
-.hero-foto{position:relative;min-height:430px;border-radius:18px 18px 0 0;overflow:hidden;background:linear-gradient(180deg,#356791 0%,#2b567b 100%);border:1px solid var(--borde-osc);border-bottom:none;display:flex;align-items:center;justify-content:center}
-.hero-foto .ph{display:flex;flex-direction:column;align-items:center;gap:14px;color:#5c5c63;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;font-weight:600;text-align:center;padding:20px}
-.hero-foto .ph img{width:110px;height:110px;opacity:.5}
-.chip-plancha{position:absolute;left:18px;bottom:18px;background:var(--oro);color:#1a1a1a;font-weight:800;font-size:13px;letter-spacing:.4px;padding:10px 16px;border-radius:9px;box-shadow:0 6px 18px rgba(0,0,0,.4)}
-@media(max-width:880px){
-  .hero{padding-top:110px}
-  .hero-in{grid-template-columns:1fr;gap:34px}
-  .hero-foto{min-height:340px;border-radius:14px;border-bottom:1px solid var(--borde-osc)}
-  .hero-nota{padding-bottom:38px}
-}
-
-/* ── Banda de cifras ─────────────────────────────────────────────── */
-.cifras{background:var(--negro2);border-top:1px solid var(--borde-osc);padding:54px 24px 60px;color:var(--crema)}
-.cifras-in{max-width:1120px;margin:0 auto}
-.cifras-titulo{display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:34px}
-.cifras-titulo h2{font-size:13px;letter-spacing:2.6px;text-transform:uppercase;color:var(--oro);font-weight:700}
-.cifras-titulo a{color:var(--gris);font-size:13px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
-.cifras-titulo a:hover{color:var(--oro)}
-.cifras-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--borde-osc);border:1px solid var(--borde-osc);border-radius:14px;overflow:hidden}
-.cifra{background:var(--negro2);padding:26px 24px 22px;transition:background .2s}
-.cifra:hover{background:#2b567b}
-.cifra-num{font-family:var(--serif);font-weight:800;font-size:clamp(30px,3.4vw,42px);letter-spacing:-1px;line-height:1;color:var(--crema);margin-bottom:9px}
-.cifra-num em{font-style:normal;color:var(--oro)}
-.cifra-lbl{color:var(--gris);font-size:12.5px;line-height:1.5}
-@media(max-width:880px){.cifras-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:540px){.cifras-grid{grid-template-columns:1fr}}
-
-/* ── Secciones claras ────────────────────────────────────────────── */
-.sec{padding:88px 24px}
-.sec-in{max-width:1120px;margin:0 auto}
-.sec-eye{color:var(--oro-osc);font-size:11.5px;letter-spacing:2.8px;text-transform:uppercase;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:12px}
-.sec-eye::before{content:'';width:30px;height:2px;background:var(--oro)}
-.sec h2{font-family:var(--serif);font-weight:800;font-size:clamp(30px,4vw,44px);letter-spacing:-.8px;line-height:1.12;margin-bottom:18px;max-width:720px}
-.sec-intro{color:var(--texto2);font-size:16.5px;max-width:640px;line-height:1.7}
-
-/* Quién es */
-.facetas{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
-.faceta{border:1px solid var(--borde-claro);border-radius:14px;padding:28px 26px;background:var(--fondo-claro)}
-.faceta-num{font-family:var(--serif);font-style:normal;color:var(--oro-osc);font-size:15px;margin-bottom:10px}
-.faceta h3{font-size:18px;letter-spacing:-.3px;margin-bottom:10px}
-.faceta p{color:var(--texto2);font-size:14px;line-height:1.65}
-.sec-acciones{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
-.btn-claro{border:1.5px solid var(--texto);color:var(--texto);font-size:13.5px;padding:12px 20px}
-.btn-claro:hover{background:var(--texto);color:#fff}
-@media(max-width:880px){.facetas{grid-template-columns:1fr}}
-
-/* Gestión por audiencia */
-.gestion{background:var(--fondo-claro);border-top:1px solid var(--borde-claro);border-bottom:1px solid var(--borde-claro)}
-.aud-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px}
-.aud{background:#fff;border:1px solid var(--borde-claro);border-radius:14px;padding:28px 28px 22px}
-.aud h3{font-size:13px;letter-spacing:2.2px;text-transform:uppercase;color:var(--oro-osc);font-weight:800;margin-bottom:16px}
-.aud ul{list-style:none}
-.aud li{padding:9px 0;border-bottom:1px dashed #eceae7;font-size:14.5px;color:var(--texto2);line-height:1.55}
-.aud li:last-child{border-bottom:none}
-.aud li b{color:var(--texto);font-weight:700}
-.verificar{margin-top:34px;background:var(--negro);color:var(--crema);border-radius:14px;padding:30px 32px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}
-.verificar p{font-size:16px;max-width:560px}
-.verificar p b{color:var(--oro)}
-@media(max-width:880px){.aud-grid{grid-template-columns:1fr}}
-
-/* La carta */
-.carta{background:var(--negro);color:var(--crema);border-top:1px solid var(--borde-osc)}
-.carta .sec-eye{color:var(--oro)}
-.carta h2{color:var(--crema)}
-.carta-cuerpo{max-width:760px;margin-top:36px;font-size:16px;line-height:1.8;color:#d6d1c8}
-.carta-cuerpo p{margin-bottom:20px;text-align:justify;hyphens:auto}
-.carta-cuerpo b{color:var(--crema)}
-.carta-cuerpo details{margin-top:6px}
-.carta-cuerpo summary{cursor:pointer;color:var(--oro);font-weight:700;font-size:14.5px;list-style:none;padding:12px 0;user-select:none}
-.carta-cuerpo summary::after{content:' ↓'}
-.carta-cuerpo details[open] summary::after{content:' ↑'}
-.carta-firma{margin-top:26px;font-family:var(--serif);font-style:normal;font-size:19px;color:var(--crema)}
-.carta-cargo{color:var(--gris);font-size:13px;margin-top:4px}
-
-/* Lo que viene */
-.viene-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:44px}
-.viene{border:1px solid var(--borde-claro);border-left:4px solid var(--oro);border-radius:12px;padding:24px 26px;background:#fff}
-.viene h3{font-size:16.5px;letter-spacing:-.2px;margin-bottom:8px}
-.viene p{color:var(--texto2);font-size:14px;line-height:1.6}
-@media(max-width:880px){.viene-grid{grid-template-columns:1fr}}
-
-/* Cómo votar */
-.votar{background:linear-gradient(180deg,var(--negro) 0%,var(--negro2) 100%);color:var(--crema);text-align:center;padding:96px 24px}
-.votar h2{font-family:var(--serif);font-weight:800;font-size:clamp(34px,5vw,58px);letter-spacing:-1px;margin-bottom:14px}
-.votar h2 em{font-style:normal;color:var(--oro)}
-.votar-fecha{color:var(--gris);font-size:17px;margin-bottom:44px}
-.votar-fecha b{color:var(--crema)}
-.pasos{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;max-width:900px;margin:0 auto 46px}
-.paso{flex:1 1 240px;max-width:280px;border:1px solid var(--borde-osc);border-radius:14px;padding:26px 22px;background:rgba(255,255,255,.02);text-align:left}
-.paso-n{font-family:var(--serif);font-size:30px;font-weight:800;color:var(--oro);margin-bottom:8px}
-.paso p{color:var(--gris);font-size:14px;line-height:1.6}
-.paso p b{color:var(--crema)}
-.plancha-grande{display:inline-flex;align-items:center;gap:16px;background:var(--oro);color:#1a1a1a;border-radius:14px;padding:20px 34px;font-weight:800;font-size:20px;letter-spacing:.2px;box-shadow:0 10px 30px rgba(0,0,0,.4);text-decoration:none;transition:transform .15s}
-.plancha-grande:hover{transform:translateY(-2px)}
-.plancha-grande .n4{font-family:var(--serif);font-size:44px;line-height:1}
-
-/* Pie */
-.pie{background:var(--negro2);color:#a9bccb;border-top:1px solid var(--borde-osc);padding:44px 24px 90px}
-.pie-in{max-width:1120px;margin:0 auto;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;font-size:13px}
-.pie a{color:#d3dfe9;text-decoration:underline;text-underline-offset:3px}
-.pie a:hover{color:var(--oro)}
-.pie-col h4{color:var(--crema);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
-.pie-col div{margin-bottom:8px}
-
-/* Barra fija de voto en móvil */
-.barra-voto{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--oro);color:#1a1a1a;display:none;align-items:center;justify-content:center;gap:10px;padding:13px 16px;font-weight:800;font-size:14px;box-shadow:0 -6px 18px rgba(0,0,0,.25);text-decoration:none}
-@media(max-width:880px){.barra-voto{display:flex}}
-
-/* Aparición suave al hacer scroll */
-.rev{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
-.rev.on{opacity:1;transform:none}
-
-/* ══════════ EFECTOS (ago-2026) — potentes pero sobrios ══════════ */
-.progreso{position:fixed;top:0;left:0;height:3px;background:var(--oro);z-index:90;width:0}
-
-@keyframes subir{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
-@keyframes abrirFoto{from{opacity:0;clip-path:inset(0 0 100% 0)}to{opacity:1;clip-path:inset(0 0 0% 0)}}
-.hero-eye{animation:subir .7s .1s cubic-bezier(.2,.7,.2,1) both}
-.hero h1{animation:subir .8s .22s cubic-bezier(.2,.7,.2,1) both}
-.hero-sub{animation:subir .8s .38s cubic-bezier(.2,.7,.2,1) both}
-.hero-ctas{animation:subir .8s .5s cubic-bezier(.2,.7,.2,1) both}
-.hero-nota{animation:subir .8s .6s cubic-bezier(.2,.7,.2,1) both}
-.hero-foto-wrap{animation:abrirFoto 1.1s .35s cubic-bezier(.2,.7,.2,1) both}
-
-.hero-foto-wrap{position:relative}
-.hero-foto-wrap::before{content:'';position:absolute;inset:-14px 14px 14px -14px;border:1.5px solid rgba(224,175,158,.6);border-radius:18px;pointer-events:none}
-.hero-foto img{will-change:transform;transform:translateY(var(--plx,0)) scale(1.12)}
-
-.sec h2.rev,.votar h2.rev{transform:none;clip-path:inset(0 0 100% 0);transition:clip-path .8s cubic-bezier(.2,.7,.2,1),opacity .5s}
-.sec h2.rev.on,.votar h2.rev.on{clip-path:inset(0 0 -8% 0)}
-
-.sec-in{position:relative}
-.sec-in::before{content:attr(data-cap);position:absolute;top:-52px;right:-8px;font-family:var(--serif);font-weight:800;font-size:clamp(120px,17vw,230px);line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(24,24,27,.10);pointer-events:none;z-index:0}
-.carta .sec-in::before{-webkit-text-stroke:1.5px rgba(246,245,243,.10)}
-.sec-in>*{position:relative;z-index:1}
-
-.cinta{background:var(--oro);overflow:hidden;padding:15px 0;transform:rotate(-1.1deg) scale(1.02);margin:-10px 0}
-.cinta-track{display:flex;white-space:nowrap;animation:cinta 26s linear infinite;width:max-content}
-.cinta span{color:#1a1a1a;font-weight:800;font-size:14.5px;letter-spacing:2.4px;text-transform:uppercase;padding:0 26px}
-.cinta i{color:#1a1a1a;font-style:normal;opacity:.55}
-@keyframes cinta{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.cinta:hover .cinta-track{animation-play-state:paused}
-
-.btn::after{content:'\2192';opacity:0;margin-left:-14px;transition:opacity .2s,margin .2s}
-.btn:hover::after{opacity:1;margin-left:2px}
-
-@keyframes latido{0%,100%{box-shadow:0 10px 30px rgba(0,0,0,.4)}50%{box-shadow:0 10px 44px rgba(224,175,158,.5)}}
-.plancha-grande{animation:latido 2.8s ease-in-out infinite}
-
-@media (prefers-reduced-motion: reduce){
-  .hero-eye,.hero h1,.hero-sub,.hero-ctas,.hero-nota,.hero-foto-wrap,.plancha-grande{animation:none}
-  .cinta-track{animation:none}
-  .sec h2.rev,.votar h2.rev{clip-path:none;transition:none}
-  .hero-foto img{transform:none}
-}
-@media (max-width:880px){
-  .sec-in::before{font-size:110px;top:-34px;right:0}
-  .hero-foto-wrap::before{inset:-10px 10px 10px -10px}
-}
-
-
-/* ══════════ REFERENCIA HIRAJAVED (ago-2026): arco, pastillas, ondulado ══════════ */
-/* Retrato en arco — la firma de la referencia, en nuestra paleta */
-.hero-foto{border-radius:999px 999px 22px 22px !important;border-bottom:1px solid var(--borde-osc) !important}
-.hero-foto-wrap::before{border-style:dashed !important;border-radius:999px 999px 26px 26px !important}
-.chip-plancha{transform:rotate(2deg);border-radius:12px}
-
-/* Antetitulo como chip pastilla */
-.hero-eye{display:inline-flex;align-items:center;gap:9px;background:rgba(224,175,158,.18);border:1px solid rgba(224,175,158,.45);border-radius:999px;padding:9px 18px;letter-spacing:2.2px;font-size:11px}
-.hero-eye::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--oro)}
-
-/* Nota de consulta como pastillas */
-.hero-pills{display:flex;gap:10px;flex-wrap:wrap;padding-bottom:56px}
-.hero-pill{border:1px solid rgba(255,255,255,.32);border-radius:999px;padding:8px 16px;font-size:12.5px;font-weight:700;color:var(--gris)}
-.hero-pill b{color:var(--crema)}
-@media(max-width:880px){.hero-pills{padding-bottom:38px}}
-
-/* Subrayado ondulado dorado bajo los titulos (SVG inline, no clipart) */
-.sec h2::after,.votar h2::after{content:'';display:block;height:9px;width:118px;margin-top:12px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='9' viewBox='0 0 120 9'><path d='M2 6 Q 12 1 22 6 T 42 6 T 62 6 T 82 6 T 102 6 T 122 6' fill='none' stroke='%23ecc0ae' stroke-width='3' stroke-linecap='round'/></svg>") no-repeat left center/118px 9px}
-.votar h2::after{margin-left:auto;margin-right:auto}
-
-/* Botones y CTA en pastilla */
-.btn,.nav-cta,.plancha-grande{border-radius:999px}
-
-/* El recorrido — 4 hitos verificados, el "journey" sobrio */
-.ruta{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px;position:relative}
-.ruta::before{content:'';position:absolute;top:9px;left:6%;right:6%;border-top:2px dotted #d8d4cf;z-index:0}
-.paso-r{position:relative;z-index:1}
-.paso-r i{display:block;width:18px;height:18px;border-radius:50%;background:#fff;border:4px solid var(--oro);margin-bottom:12px}
-.paso-r time{font-size:11.5px;font-weight:800;letter-spacing:1px;color:var(--oro-osc);text-transform:uppercase}
-.paso-r h4{font-size:15px;letter-spacing:-.2px;margin:4px 0 4px;color:var(--texto)}
-.paso-r p{font-size:13px;color:var(--texto2);line-height:1.5}
-@media(max-width:880px){
-  .ruta{grid-template-columns:1fr;gap:20px;padding-left:8px}
-  .ruta::before{top:2%;bottom:2%;left:16px;right:auto;border-top:none;border-left:2px dotted #d8d4cf}
-  .paso-r{padding-left:34px}
-  .paso-r i{position:absolute;left:0;top:2px;margin:0}
-}
-
-</style>
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-<div class="progreso" aria-hidden="true"></div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<!-- ══════════ NAVEGACIÓN ══════════ -->
-<nav class="nav">
-  <div class="nav-in">
-    <a class="nav-marca" href="#inicio">
-      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><circle cx='20' cy='20' r='19' fill='none' stroke='%23ecc0ae' stroke-width='2'/><text x='20' y='26' text-anchor='middle' font-family='Georgia' font-size='15' font-weight='bold' fill='%23ecc0ae'>EM</text></svg>" alt="">
-      Eva Manotas
-    </a>
-    <div class="nav-links">
-      <a href="#carta">La carta</a>
-      <a href="#quien">Quién es</a>
-      <a href="#gestion">La gestión</a>
-      <a href="#viene">Lo que viene</a>
-      <a href="#votar">Cómo votar</a>
-    </div>
-    <a class="nav-cta" href="#votar">Plancha #4 · 17 sep</a>
-  </div>
-</nav>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Eva Manotas, ir al inicio">
+        <img src="assets/brand-mark.png" width="34" height="34" alt="">
+        <span>Eva Manotas</span>
+      </a>
 
-<!-- ══════════ PORTADA ══════════ -->
-<header class="hero" id="inicio">
-  <div class="hero-in">
-    <div>
-      <div class="hero-eye">Designación de Decanos y Decanas 2026–2028</div>
-      <h1>Primero,<br>las <em>personas</em>.</h1>
-      <p class="hero-sub"><b>Eva Cristina Manotas Rodríguez</b> — candidata a la Decanatura de la Facultad de Minas. Dos años de resultados que puedes verificar, y una propuesta para que lo mejor esté por venir.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-oro" href="#viene">Conoce la propuesta</a>
-        <a class="btn btn-linea" href="https://tablero-plan-de-accion.vercel.app" target="_blank" rel="noopener">Verifica los resultados</a>
-      </div>
-      <div class="hero-pills"><span class="hero-pill">Consulta electrónica</span><span class="hero-pill"><b>17 de septiembre de 2026</b></span><span class="hero-pill">Participa UNAL</span></div>
-    </div>
-    <div class="hero-foto-wrap">
-    <div class="hero-foto">
-      <!-- Retrato oficial: la profe frente a la escalinata del M3. La foto es
-           apaisada; object-position mantiene el rostro en cuadro al recortarla
-           al panel vertical. -->
-      <img src="eva-hero.jpg" alt="Eva Cristina Manotas Rodríguez frente a la Facultad de Minas"
-           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%">
-      <div class="chip-plancha">Plancha #4</div>
-    </div>
-    </div>
-  </div>
-</header>
+      <ul class="nav-links" role="list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#carta">La carta</a></li>
+        <li><a href="#quien">Quién es</a></li>
+        <li><a href="#gestion">La gestión</a></li>
+        <li><a href="#viene">Lo que viene</a></li>
+        <li><a href="#votar">Cómo votar</a></li>
+      </ul>
 
-<!-- ══════════ LA CARTA ══════════ -->
-<section class="sec carta" id="carta">
-  <div class="sec-in" data-cap="01">
-    <div class="sec-eye rev">Una carta a la comunidad</div>
-    <h2 class="rev">En sus palabras</h2>
-    <div class="carta-cuerpo rev">
-      <p>Empezamos este bienio con una convicción sencilla: una Facultad se mide por lo que hace posible en la vida de quienes la integran. Los recursos, los convenios, los laboratorios y los reconocimientos son medios, nunca fines. Con ese criterio priorizamos el gasto, abrimos las convocatorias y decidimos dónde poner el esfuerzo. Lo que sigue es el resultado.</p>
-      <p>El primer compromiso fue que ningún estudiante quede por fuera por razones que la Facultad puede evitar. <b>Minas Contigo</b>, creado en 2022, se fortaleció hasta cubrir cuatro asignaturas y solo en 2025 acompañó a <b>901 estudiantes</b>: cerca de 738 aprobaron cursos que antes reprobaban y <b>480 superaron la condición de riesgo académico</b>.</p>
-      <details>
-        <summary>Leer la carta completa</summary>
-        <p>A ese acompañamiento se sumaron la Escuela de Familias, con 110 familias vinculadas, y el diseño de <b>SAMyR</b>, nuestro sistema de alerta temprana, cuya propuesta quedó lista para desarrollo. Y porque permanecer también cuesta dinero, <b>197 becas de posgrado</b> exoneraron $1.682,5 millones en derechos académicos y servimos 5.851 almuerzos subsidiados.</p>
-        <p>Con el profesorado nos propusimos ampliar su capacidad de investigar. Creamos <b>20 proyectos de investigación con financiación externa por $26.555 millones</b> y acompañamos a <b>123 docentes —el 69% de la planta— en 254 proyectos activos</b>. La equidad avanzó con ellos: cuatro de los proyectos creados quedaron bajo el liderazgo de profesoras, frente a uno el año anterior.</p>
-        <p>Con los egresados quisimos sostener un vínculo real y no ceremonial. La Facultad <b>contrató a 390 de ellos</b>, caracterizamos <b>160 empresas y emprendimientos</b> creados por egresados y, en el gesto que mejor resume esa reciprocidad, <b>266 de ellos aportaron los recursos con los que se adquirieron 255 pines de admisión</b> para jóvenes de colegios públicos.</p>
-        <p>Enseñar e investigar exige espacios y equipos a la altura. Pusimos en marcha un plan de <b>$4.286 millones en cuatro frentes de infraestructura</b>, renovamos por completo el <b>Laboratorio de Termodinámica</b> y comenzó la intervención de las <b>salas de estudio del Bloque M9</b>, para que el campus esté a la altura de su gente.</p>
-        <p>De ese mismo propósito nació la <b>estrategia de internacionalización</b>: con el <b>CSIC de España</b> abrimos una convocatoria conjunta en la que cuatro grupos resultaron seleccionados; en <b>OPTIMALMINE</b>, del programa Horizonte Europa, somos la <b>única universidad latinoamericana del consorcio</b>; y la Facultad coadministra hoy, con aliados internacionales, cerca de <b>$2.200 millones</b> para la movilidad de investigadores.</p>
-        <p>Ninguna de estas cifras es una afirmación aislada: cada una corresponde a una actividad registrada y puede rastrearse hasta el proyecto que la produjo. En el tablero hacemos seguimiento a los <b>31 proyectos del Plan de Acción 2024–2026</b>, con su responsable, su meta y su avance.</p>
+      <a class="nav-choice" href="#votar" aria-label="Ver cómo votar por la plancha 4">Plancha #4</a>
+
+      <details class="mobile-nav">
+        <summary aria-label="Abrir menú de navegación">
+          <span>Menú</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </summary>
+        <ul role="list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#carta">La carta</a></li>
+          <li><a href="#quien">Quién es</a></li>
+          <li><a href="#gestion">La gestión</a></li>
+          <li><a href="#viene">Lo que viene</a></li>
+          <li><a href="#votar">Cómo votar</a></li>
+        </ul>
       </details>
-      <div class="carta-firma">Eva Cristina Manotas Rodríguez</div>
-      <div class="carta-cargo">Decana · Facultad de Minas · Universidad Nacional de Colombia, Sede Medellín</div>
-    </div>
-  </div>
-</section>
+    </nav>
+  </header>
 
-<!-- ══════════ CIFRAS ══════════ -->
-<section class="cifras">
-  <div class="cifras-in">
-    <div class="cifras-titulo rev">
-      <h2>La gestión 2024–2026, en cifras</h2>
-      <a href="https://tablero-plan-de-accion.vercel.app" target="_blank" rel="noopener">Cada número es verificable en el tablero público →</a>
-    </div>
-    <div class="cifras-grid rev">
-      <div class="cifra"><div class="cifra-num">1.317</div><div class="cifra-lbl">estudiantes acompañados por Minas Contigo en el bienio, en los cursos de fundamentación</div></div>
-      <div class="cifra"><div class="cifra-num"><em>$2.200</em>M</div><div class="cifra-lbl">gestionados con aliados internacionales gracias a la estrategia de internacionalización</div></div>
-      <div class="cifra"><div class="cifra-num"><em>$26.555</em>M</div><div class="cifra-lbl">en 20 proyectos de investigación con financiación externa creados en un solo año</div></div>
-      <div class="cifra"><div class="cifra-num">96%</div><div class="cifra-lbl">de los programas académicos acreditados en alta calidad</div></div>
-      <div class="cifra"><div class="cifra-num"><em>$200</em>M</div><div class="cifra-lbl">adicionales gestionados para apoyos económicos a estudiantes, por fuera del presupuesto ordinario</div></div>
-      <div class="cifra"><div class="cifra-num">344.490</div><div class="cifra-lbl">botellas plásticas evitadas con la red de bebederos del campus — 146% más que en 2024</div></div>
-    </div>
-  </div>
-</section>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-wash" aria-hidden="true"></div>
+      <div class="hero-inner shell">
+        <div class="hero-copy">
+          <h1 id="hero-title">Eva Cristina<br>Manotas Rodríguez</h1>
+          <p class="hero-lead">Candidata a la Decanatura de la Facultad de Minas. Dos años de resultados que puedes verificar y una propuesta para que lo mejor esté por venir.</p>
 
+          <div class="hero-actions">
+            <a class="button button-soft" href="#viene">Conoce la propuesta</a>
+            <a class="text-link" href="https://tablero-plan-de-accion.vercel.app" target="_blank" rel="noopener">Ver resultados <span aria-hidden="true">↗</span></a>
+          </div>
 
-<div class="cinta" aria-hidden="true"><div class="cinta-track"><span>Primero, las personas</span><i>◆</i><span>Plancha #4</span><i>◆</i><span>17 de septiembre</span><i>◆</i><span>Resultados verificables</span><i>◆</i><span>Primero, las personas</span><i>◆</i><span>Plancha #4</span><i>◆</i><span>17 de septiembre</span><i>◆</i><span>Resultados verificables</span><i>◆</i><span>Primero, las personas</span><i>◆</i><span>Plancha #4</span><i>◆</i><span>17 de septiembre</span><i>◆</i><span>Resultados verificables</span><i>◆</i><span>Primero, las personas</span><i>◆</i><span>Plancha #4</span><i>◆</i><span>17 de septiembre</span><i>◆</i><span>Resultados verificables</span><i>◆</i></div></div>
-<!-- ══════════ QUIÉN ES ══════════ -->
-<section class="sec" id="quien">
-  <div class="sec-in" data-cap="02">
-    <div class="sec-eye rev">Quién es</div>
-    <h2 class="rev">Una decana que abre la puerta</h2>
-    <p class="sec-intro rev">Profesora de la Facultad de Minas y su decana durante el bienio 2024–2026. Su forma de administrar se resume en una imagen que la comunidad conoce bien: una Decanatura a la que se entra sin antesala, sea estudiante, profesor, administrativo o contratista.</p>
-    <div class="facetas rev">
-      <div class="faceta">
-        <div class="faceta-num">I · La profesora</div>
-        <h3>Creó Minas Contigo</h3>
-        <p>En 2022, siendo Vicedecana, creó el programa que acompaña a los estudiantes en los cursos de fundamentación. Como Decana lo fortaleció: pasó de dos a cuatro asignaturas y ha acompañado a cerca de 4.000 estudiantes desde su origen.</p>
+          <p class="hero-meta">
+            <span>Plancha #4</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-09-17">17 de septiembre de 2026</time>
+          </p>
+        </div>
+
+        <figure class="hero-visual">
+          <div class="portrait-frame">
+            <img class="portrait" src="assets/eva-hero.webp" width="1400" height="1094" alt="Eva Cristina Manotas Rodríguez frente a la Facultad de Minas" fetchpriority="high">
+          </div>
+          <img class="hero-rose" src="assets/rose-watercolor.webp" width="1000" height="666" alt="" aria-hidden="true">
+        </figure>
       </div>
-      <div class="faceta">
-        <div class="faceta-num">II · La decana</div>
-        <h3>Gestión con cuentas claras</h3>
-        <p>Condujo el Plan de Acción 2024–2026 —31 proyectos con responsable, meta y avance— y lo puso a disposición de todos en un tablero público de seguimiento. La rendición de cuentas como práctica, no como discurso.</p>
+    </section>
+
+    <section class="section letter-section" id="carta" aria-labelledby="carta-title">
+      <div class="letter-layout shell">
+        <div class="section-heading" data-reveal>
+          <p class="section-label">Una carta a la comunidad</p>
+          <h2 id="carta-title">Primero, las personas.</h2>
+          <p class="section-intro">Una Facultad se mide por lo que hace posible en la vida de quienes la integran.</p>
+        </div>
+
+        <div class="letter-copy" data-reveal>
+          <p>Empezamos este bienio con una convicción sencilla: los recursos, los convenios, los laboratorios y los reconocimientos son medios, nunca fines. Con ese criterio priorizamos el gasto, abrimos las convocatorias y decidimos dónde poner el esfuerzo.</p>
+          <p>El primer compromiso fue que ningún estudiante quede por fuera por razones que la Facultad puede evitar. <strong>Minas Contigo</strong>, creado en 2022, se fortaleció hasta cubrir cuatro asignaturas y solo en 2025 acompañó a <strong>901 estudiantes</strong>.</p>
+
+          <details class="letter-more">
+            <summary>Leer la carta completa</summary>
+            <div class="letter-more-body">
+              <p>A ese acompañamiento se sumaron la Escuela de Familias, con 110 familias vinculadas, y el diseño de <strong>SAMyR</strong>, nuestro sistema de alerta temprana, cuya propuesta quedó lista para desarrollo. Y porque permanecer también cuesta dinero, <strong>197 becas de posgrado</strong> exoneraron $1.682,5 millones en derechos académicos y servimos 5.851 almuerzos subsidiados.</p>
+              <p>Con el profesorado nos propusimos ampliar su capacidad de investigar. Creamos <strong>20 proyectos de investigación con financiación externa por $26.555 millones</strong> y acompañamos a <strong>123 docentes —el 69% de la planta— en 254 proyectos activos</strong>.</p>
+              <p>Con los egresados quisimos sostener un vínculo real y no ceremonial. La Facultad <strong>contrató a 390 de ellos</strong>, caracterizamos <strong>160 empresas y emprendimientos</strong> creados por egresados y 266 aportaron los recursos con los que se adquirieron 255 pines de admisión para jóvenes de colegios públicos.</p>
+              <p>Enseñar e investigar exige espacios y equipos a la altura. Pusimos en marcha un plan de <strong>$4.286 millones en cuatro frentes de infraestructura</strong>, renovamos el Laboratorio de Termodinámica y comenzó la intervención de las salas de estudio del Bloque M9.</p>
+              <p>De ese mismo propósito nació la estrategia de internacionalización: con el <strong>CSIC de España</strong> abrimos una convocatoria conjunta; en <strong>OPTIMALMINE</strong> somos la única universidad latinoamericana del consorcio; y la Facultad coadministra cerca de <strong>$2.200 millones</strong> para la movilidad de investigadores.</p>
+              <p>Ninguna de estas cifras es una afirmación aislada: cada una corresponde a una actividad registrada y puede rastrearse hasta el proyecto que la produjo.</p>
+            </div>
+          </details>
+
+          <p class="signature">Eva Cristina Manotas Rodríguez</p>
+          <p class="signature-role">Decana · Facultad de Minas · Universidad Nacional de Colombia, Sede Medellín</p>
+        </div>
       </div>
-      <div class="faceta">
-        <div class="faceta-num">III · La persona</div>
-        <h3>Equidad que se vuelve presupuesto</h3>
-        <p>Bajo su gestión, la equidad y la inclusión dejaron de ser una declaración: 2.364 personas participaron en la estrategia de equidad de género, y la Facultad llegó al territorio — de Casanare al Cauca.</p>
+    </section>
+
+    <section class="section identity-section" id="quien" aria-labelledby="quien-title">
+      <div class="identity-layout shell">
+        <figure class="illustration illustration-building" data-reveal>
+          <img src="assets/facultad-minas.webp" width="1100" height="825" loading="lazy" alt="Ilustración en acuarela del edificio de la Facultad de Minas">
+        </figure>
+
+        <div class="identity-copy" data-reveal>
+          <p class="section-label">Quién es</p>
+          <h2 id="quien-title">Una decana que abre la puerta</h2>
+          <p class="section-intro">Profesora de la Facultad de Minas y su decana durante el bienio 2024–2026. Su forma de administrar se resume en una imagen que la comunidad conoce bien: una Decanatura a la que se entra sin antesala.</p>
+
+          <div class="identity-points">
+            <article><span>01</span><div><h3>La profesora</h3><p>Creó Minas Contigo en 2022 y lo fortaleció de dos a cuatro asignaturas.</p></div></article>
+            <article><span>02</span><div><h3>La decana</h3><p>Condujo 31 proyectos con responsable, meta y avance publicados en un tablero abierto.</p></div></article>
+            <article><span>03</span><div><h3>La persona</h3><p>Convirtió la equidad y la inclusión en presupuesto, presencia y acompañamiento.</p></div></article>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey shell" data-reveal aria-labelledby="journey-title">
+        <div class="journey-heading">
+          <p class="section-label">El recorrido</p>
+          <h3 id="journey-title">Una gestión construida paso a paso</h3>
+        </div>
+        <ol class="timeline">
+          <li><time datetime="2022">2022</time><strong>Crea Minas Contigo</strong><span>Siendo Vicedecana funda el programa de acompañamiento académico.</span></li>
+          <li><time datetime="2024">2024</time><strong>Asume la Decanatura</strong><span>Con una convicción: una Facultad centrada en las personas.</span></li>
+          <li><time>2024–2026</time><strong>Plan de Acción</strong><span>31 proyectos con responsable, meta y avance verificable.</span></li>
+          <li><time datetime="2026">2026</time><strong>Plancha #4</strong><span>Candidata a la Decanatura para el bienio 2026–2028.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section results-section" id="gestion" aria-labelledby="gestion-title">
+      <div class="shell">
+        <div class="results-heading" data-reveal>
+          <div>
+            <p class="section-label">Lo que hicimos · 2024–2026</p>
+            <h2 id="gestion-title">Resultados para cada persona de esta Facultad</h2>
+          </div>
+          <a class="text-link" href="https://tablero-plan-de-accion.vercel.app" target="_blank" rel="noopener">Abrir el tablero público <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="metrics" data-reveal>
+          <article><strong>1.317</strong><p>estudiantes acompañados por Minas Contigo en el bienio.</p></article>
+          <article><strong>$26.555M</strong><p>en 20 proyectos de investigación con financiación externa.</p></article>
+          <article><strong>96%</strong><p>de los programas académicos acreditados en alta calidad.</p></article>
+          <article><strong>$2.200M</strong><p>gestionados con aliados internacionales.</p></article>
+          <article><strong>197</strong><p>becas de posgrado y más de $1.680 millones exonerados.</p></article>
+          <article><strong>344.490</strong><p>botellas plásticas evitadas con la red de bebederos.</p></article>
+        </div>
+
+        <div class="audiences" data-reveal>
+          <details><summary>Para los estudiantes</summary><ul><li><strong>$200 millones adicionales</strong> gestionados para apoyos económicos.</li><li><strong>5.851 almuerzos subsidiados</strong> y 590 personas con acompañamiento psicosocial.</li><li><strong>Cerca de $400 millones</strong> asegurados para mejorar el Bloque M9.</li></ul></details>
+          <details><summary>Para los profesores</summary><ul><li><strong>123 docentes</strong> —el 69% de la planta— en 254 proyectos activos.</li><li><strong>$734,8 millones</strong> en mantenimiento y calibración de 271 equipos.</li><li>Convocatoria conjunta con el CSIC y participación en <strong>OPTIMALMINE</strong>.</li></ul></details>
+          <details><summary>Para los egresados</summary><ul><li><strong>390 egresados contratados</strong> por la propia Facultad.</li><li><strong>160 empresas y emprendimientos</strong> caracterizados.</li><li><strong>266 egresados</strong> financiaron pines de admisión para jóvenes de colegios públicos.</li></ul></details>
+          <details><summary>Para el campus y la comunidad</summary><ul><li><strong>Más de 700 individuos vegetales</strong> sembrados.</li><li><strong>2.364 personas</strong> en la estrategia de equidad de género e inclusión.</li><li>Ciencia con niños, mujeres campesinas y comunidades mineras de distintos territorios.</li></ul></details>
+        </div>
+
+        <p class="verification-note" data-reveal><strong>No nos lo creas: verifícalo.</strong> Cada cifra vive en el tablero público del Plan de Acción, proyecto por proyecto, con responsable, meta y avance.</p>
+      </div>
+    </section>
+
+    <section class="section proposal-section" id="viene" aria-labelledby="viene-title">
+      <div class="shell">
+        <div class="proposal-heading" data-reveal>
+          <p class="section-label">La propuesta · 2026–2028</p>
+          <h2 id="viene-title">Lo mejor está por venir</h2>
+          <p class="section-intro">Gestiones ya sembradas en este bienio que el próximo verá florecer.</p>
+        </div>
+
+        <div class="proposal-list" data-reveal>
+          <article><span>01</span><div><h3>El Bloque M9, renovado</h3><p>Cerca de $400 millones ya asegurados para convertirlo en un mejor espacio para estudiantes y comunidad académica.</p></div></article>
+          <article><span>02</span><div><h3>SAMyR en marcha</h3><p>El sistema de alerta temprana para detectar a tiempo a quien está en riesgo de abandonar.</p></div></article>
+          <article><span>03</span><div><h3>Centro de Excelencia con IBM</h3><p>Una apuesta por inteligencia artificial, nube y computación cuántica para la transformación tecnológica.</p></div></article>
+          <article><span>04</span><div><h3>Escuela Internacional de Posgrados</h3><p>La armonización de los posgrados como plataforma de proyección internacional.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vote-section" id="votar" aria-labelledby="votar-title">
+      <div class="vote-layout shell">
+        <div class="vote-copy" data-reveal>
+          <p class="section-label">Cómo votar</p>
+          <h2 id="votar-title">Tu voto decide la Facultad que viene.</h2>
+          <p class="vote-date">Consulta electrónica · <strong>jueves 17 de septiembre de 2026</strong> · Participa UNAL</p>
+
+          <ol class="vote-steps">
+            <li><span>1</span><p>Ingresa ese día a <strong>Participa UNAL</strong> con tu usuario institucional.</p></li>
+            <li><span>2</span><p>Busca la consulta de <strong>Decanatura · Facultad de Minas</strong>.</p></li>
+            <li><span>3</span><p>Marca la <strong>plancha #4</strong> — Eva Cristina Manotas Rodríguez.</p></li>
+          </ol>
+
+          <div class="choice-mark" aria-label="Plancha número 4"><strong>4</strong><span>Plancha #4<small>Sigamos construyendo juntos</small></span></div>
+        </div>
+
+        <figure class="illustration illustration-ballot" data-reveal>
+          <img src="assets/ballot-watercolor.webp" width="760" height="1021" loading="lazy" alt="Ilustración en acuarela de una persona depositando su voto por la rosa">
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content shell">
+      <div>
+        <img src="assets/brand-mark.png" width="42" height="42" alt="">
+        <h2>Eva Cristina Manotas Rodríguez</h2>
+        <p>Candidata a la Decanatura 2026–2028<br>Facultad de Minas · Universidad Nacional de Colombia — Sede Medellín</p>
+      </div>
+      <div class="footer-links">
+        <h3>Consulta y resultados</h3>
+        <a href="https://tablero-plan-de-accion.vercel.app" target="_blank" rel="noopener">Tablero del Plan de Acción 2024–2026 <span aria-hidden="true">↗</span></a>
+        <a href="https://minas.medellin.unal.edu.co/noticias/facultad" target="_blank" rel="noopener">Noticias de la Facultad <span aria-hidden="true">↗</span></a>
+        <a href="#votar">Cómo votar</a>
       </div>
     </div>
-    <div class="ruta rev">
-      <div class="paso-r"><i></i><time>2022</time><h4>Crea Minas Contigo</h4><p>Siendo Vicedecana funda el programa de acompañamiento en cursos de fundamentación.</p></div>
-      <div class="paso-r"><i></i><time>2024</time><h4>Asume la Decanatura</h4><p>Con una convicción: una Facultad centrada en las personas.</p></div>
-      <div class="paso-r"><i></i><time>2024 – 2026</time><h4>Plan de Acción</h4><p>31 proyectos con responsable, meta y avance — publicados en un tablero abierto.</p></div>
-      <div class="paso-r"><i></i><time>2026</time><h4>Plancha #4</h4><p>Candidata a la Decanatura 2026–2028: lo mejor está por venir.</p></div>
+
+    <img class="footer-landscape" src="assets/campus-footer.webp" width="2200" height="933" loading="lazy" alt="Ilustración panorámica en acuarela del campus de la Universidad Nacional de Colombia, Sede Medellín">
+
+    <div class="footer-bottom shell">
+      <span>Primero, las personas.</span>
+      <span>Plancha #4 · 2026–2028</span>
     </div>
-    <div class="sec-acciones rev">
-      <!-- ENLACES PENDIENTES: hoja de vida y perfil oficial de la consulta -->
-      <a class="btn btn-claro" href="#" title="Pendiente: enlace al perfil oficial">Ver su perfil (PDF)</a>
-      <a class="btn btn-claro" href="#" title="Pendiente: enlace al video">Ver su video de presentación</a>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ LA GESTIÓN ══════════ -->
-<section class="sec gestion" id="gestion">
-  <div class="sec-in" data-cap="03">
-    <div class="sec-eye rev">Lo que hicimos · 2024–2026</div>
-    <h2 class="rev">Resultados para cada persona de esta Facultad</h2>
-    <div class="aud-grid rev">
-      <div class="aud">
-        <h3>Para los estudiantes</h3>
-        <ul>
-          <li><b>1.317 acompañados</b> por Minas Contigo en el bienio · el programa pasó de 2 a 4 asignaturas</li>
-          <li><b>197 becas de posgrado</b> — más de $1.680 millones exonerados en derechos académicos</li>
-          <li><b>$200 millones adicionales</b> gestionados para apoyos económicos</li>
-          <li><b>5.851 almuerzos subsidiados</b> y 590 personas con acompañamiento psicosocial</li>
-          <li><b>Cerca de $400 millones asegurados</b> para mejorar el Bloque M9</li>
-        </ul>
-      </div>
-      <div class="aud">
-        <h3>Para los profesores</h3>
-        <ul>
-          <li><b>20 proyectos</b> de investigación con financiación externa por <b>$26.555 millones</b> en un año</li>
-          <li><b>123 docentes</b> —el 69% de la planta— en 254 proyectos activos</li>
-          <li><b>CSIC de España:</b> convocatoria conjunta con 4 grupos seleccionados · <b>OPTIMALMINE:</b> única universidad latinoamericana coadministradora</li>
-          <li><b>$734,8 millones</b> en mantenimiento y calibración de 271 equipos de laboratorio</li>
-        </ul>
-      </div>
-      <div class="aud">
-        <h3>Para los egresados</h3>
-        <ul>
-          <li><b>390 egresados contratados</b> por la propia Facultad — 160 docentes ocasionales y 216 en proyectos</li>
-          <li><b>160 empresas y emprendimientos</b> de egresados caracterizados</li>
-          <li><b>266 egresados</b> aportaron los recursos de los pines de admisión para jóvenes de colegios públicos</li>
-        </ul>
-      </div>
-      <div class="aud">
-        <h3>Para el campus y la comunidad</h3>
-        <ul>
-          <li><b>344.490 botellas plásticas evitadas</b> — 146% más que en 2024</li>
-          <li><b>Más de 700 individuos vegetales</b> sembrados</li>
-          <li><b>2.364 personas</b> en la estrategia de equidad de género e inclusión</li>
-          <li>Ciencia para <b>más de 600 niños en Casanare</b>, mujeres campesinas en San Cristóbal y mineros artesanales en Cauca</li>
-        </ul>
-      </div>
-    </div>
-    <div class="verificar rev">
-      <p><b>No nos lo creas: verifícalo.</b> Cada cifra vive en el tablero público del Plan de Acción, proyecto por proyecto, con responsable, meta y avance.</p>
-      <a class="btn btn-oro" href="https://tablero-plan-de-accion.vercel.app" target="_blank" rel="noopener">Abrir el tablero</a>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ LO QUE VIENE ══════════ -->
-<section class="sec" id="viene">
-  <div class="sec-in" data-cap="04">
-    <div class="sec-eye rev">La propuesta 2026–2028</div>
-    <h2 class="rev">Lo mejor está por venir</h2>
-    <p class="sec-intro rev">Estas son gestiones ya sembradas en este bienio que el próximo verá florecer — y la propuesta completa traza el resto del camino.</p>
-    <div class="viene-grid rev">
-      <div class="viene"><h3>El Bloque M9, renovado</h3><p>Cerca de $400 millones ya asegurados para convertirlo en un mejor espacio para los estudiantes y la comunidad académica. La obra inicia su ejecución.</p></div>
-      <div class="viene"><h3>SAMyR en marcha</h3><p>El sistema de alerta temprana para detectar a tiempo a quien está en riesgo de abandonar, con su propuesta lista para arrancar el desarrollo.</p></div>
-      <div class="viene"><h3>Centro de Excelencia con IBM</h3><p>Gestiones estratégicas para consolidar un centro que lidere la transformación tecnológica de la Facultad: inteligencia artificial, nube y computación cuántica.</p></div>
-      <div class="viene"><h3>Escuela Internacional de Posgrados</h3><p>La armonización de los posgrados ya dio el primer paso; el siguiente bienio la consolida como apuesta de proyección internacional.</p></div>
-    </div>
-    <div class="sec-acciones rev">
-      <!-- ENLACE PENDIENTE: PDF oficial de la propuesta -->
-      <a class="btn btn-oro" href="#" title="Pendiente: enlace al PDF de la propuesta">Leer la propuesta completa (PDF)</a>
-    </div>
-  </div>
-</section>
-
-
-<div class="cinta" aria-hidden="true"><div class="cinta-track"><span>Primero, las personas</span><i>◆</i><span>Plancha #4</span><i>◆</i><span>17 de septiembre</span><i>◆</i><span>Resultados verificables</span><i>◆</i><span>Primero, las personas</span><i>◆</i><span>Plancha #4</span><i>◆</i><span>17 de septiembre</span><i>◆</i><span>Resultados verificables</span><i>◆</i><span>Primero, las personas</span><i>◆</i><span>Plancha #4</span><i>◆</i><span>17 de septiembre</span><i>◆</i><span>Resultados verificables</span><i>◆</i><span>Primero, las personas</span><i>◆</i><span>Plancha #4</span><i>◆</i><span>17 de septiembre</span><i>◆</i><span>Resultados verificables</span><i>◆</i></div></div>
-<!-- ══════════ CÓMO VOTAR ══════════ -->
-<section class="votar" id="votar">
-  <h2 class="rev">Tu voto decide<br>la Facultad <em>que viene</em></h2>
-  <p class="votar-fecha rev">Consulta electrónica · <b>miércoles 17 de septiembre de 2026</b> · plataforma Participa UNAL</p>
-  <div class="pasos rev">
-    <div class="paso"><div class="paso-n">1</div><p>Ingresa ese día a <b>Participa UNAL</b> con tu usuario institucional.</p></div>
-    <div class="paso"><div class="paso-n">2</div><p>Busca la consulta de <b>Decanatura · Facultad de Minas</b>.</p></div>
-    <div class="paso"><div class="paso-n">3</div><p>Marca la <b>plancha #4</b> — Eva Cristina Manotas Rodríguez.</p></div>
-  </div>
-  <a class="plancha-grande rev" href="#" title="Pendiente: enlace a Participa UNAL"><span class="n4">4</span><span>Plancha #4<br><small style="font-weight:600;font-size:13px">Sigamos construyendo juntos</small></span></a>
-</section>
-
-<!-- ══════════ PIE ══════════ -->
-<footer class="pie">
-  <div class="pie-in">
-    <div class="pie-col">
-      <h4>Eva Cristina Manotas Rodríguez</h4>
-      <div>Candidata a la Decanatura 2026–2028</div>
-      <div>Facultad de Minas · Universidad Nacional de Colombia — Sede Medellín</div>
-    </div>
-    <div class="pie-col">
-      <h4>Documentos oficiales</h4>
-      <div><a href="#" title="Pendiente">Perfil de la aspirante (PDF)</a></div>
-      <div><a href="#" title="Pendiente">Propuesta 2026–2028 (PDF)</a></div>
-      <div><a href="#" title="Pendiente">Proceso de designación · sitio oficial</a></div>
-    </div>
-    <div class="pie-col">
-      <h4>Rendición de cuentas</h4>
-      <div><a href="https://tablero-plan-de-accion.vercel.app" target="_blank" rel="noopener">Tablero del Plan de Acción 2024–2026</a></div>
-      <div><a href="https://minas.medellin.unal.edu.co/noticias/facultad" target="_blank" rel="noopener">Noticias de la Facultad</a></div>
-    </div>
-  </div>
-</footer>
-
-<!-- Barra fija de voto (solo móvil) -->
-<a class="barra-voto" href="#votar">🗳 17 de septiembre · vota Plancha #4</a>
-
-<script>
-/* Aparición suave de las secciones al entrar al viewport. */
-const io = new IntersectionObserver(es => {
-  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
-}, { threshold: .12 });
-document.querySelectorAll('.rev').forEach(el => io.observe(el));
-
-/* Barra de progreso de lectura */
-const barra = document.querySelector('.progreso');
-addEventListener('scroll', () => {
-  const h = document.documentElement;
-  barra.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
-}, { passive: true });
-
-/* Parallax sutil del retrato */
-const foto = document.querySelector('.hero-foto img');
-if (foto && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  let pend = false;
-  addEventListener('scroll', () => {
-    if (pend) return; pend = true;
-    requestAnimationFrame(() => {
-      foto.style.setProperty('--plx', Math.min(scrollY * .1, 90) + 'px');
-      pend = false;
-    });
-  }, { passive: true });
-}
-
-/* Contadores: las cifras SUBEN al entrar en pantalla */
-const fmtCO = n => n.toLocaleString('es-CO');
-const animarCifra = el => {
-  const finalHTML = el.innerHTML;
-  const texto = el.textContent;
-  const m = texto.match(/([\d.]+)/);
-  if (!m) return;
-  const objetivo = parseInt(m[1].replace(/\./g, ''), 10);
-  if (!objetivo || objetivo < 10) return;
-  const pre = texto.slice(0, m.index), post = texto.slice(m.index + m[1].length);
-  const t0 = performance.now(), dur = 1400;
-  const paso = t => {
-    const p = Math.min((t - t0) / dur, 1);
-    const suave = 1 - Math.pow(1 - p, 3);
-    el.textContent = pre + fmtCO(Math.round(objetivo * suave)) + post;
-    if (p < 1) requestAnimationFrame(paso);
-    else el.innerHTML = finalHTML;   /* restaura el dorado del <em> */
-  };
-  requestAnimationFrame(paso);
-};
-const ioNum = new IntersectionObserver(es => es.forEach(e => {
-  if (e.isIntersecting) { animarCifra(e.target); ioNum.unobserve(e.target); }
-}), { threshold: .6 });
-if (!matchMedia('(prefers-reduced-motion: reduce)').matches)
-  document.querySelectorAll('.cifra-num').forEach(el => ioNum.observe(el));
-
-</script>
+  </footer>
 </body>
 </html>
