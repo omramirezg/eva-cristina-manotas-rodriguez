@@ -25,7 +25,7 @@ test('uses Eva portrait and all supplied watercolor illustrations', () => {
   for (const asset of [
     'eva-hero.webp',
     'rose-watercolor.webp',
-    'facultad-minas.webp',
+    'facultad-puerta-abierta.webp',
     'ballot-watercolor.webp',
     'campus-footer.webp',
   ]) {
